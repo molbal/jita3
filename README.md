@@ -17,12 +17,12 @@ To run the image in a container, use the following command:
 
   `docker run -d --name jita3 -e API\_KEY=your-api-key -e API\_SECRET=your-api-secret -e SYMBOL=ETH -e AMOUNT=0.01 jita3`
 
-This will run the `jita3` image in a container in detached mode (\`-d\`). The \`--name\` flag specifies the name of the container as \`jita3\`. The \`-e\` flag is used to set the following container environment variables:
+This will run the `jita3` image in a container in detached mode (`-d`). The `--name` flag specifies the name of the container as `jita3`. The `-e` flag is used to set the following container environment variables:
 
 *   `API_KEY`: Your Binance API key
 *   `API_SECRET`: Your Binance API secret
-*   `SYMBOL`: The symbol that the bot should trade (e.g. \`ETH\`)
-*   `AMOUNT`: The amount of units to trade each opportunity (e.g. \`0.01\`)
+*   `SYMBOL`: The symbol that the bot should trade (e.g. `ETH`)
+*   `AMOUNT`: The amount of units to trade each opportunity (e.g. `0.01`)
 
 The bot will connect to the Binance WebSocket for the specified symbol and listen for updates to the ticker price. When the ticker updates with a new best ask price, the bot will calculate the MACD and RSI indicators and check if they are indicating a trade opportunity. If they are, the bot will execute a trade for the specified amount of units of the symbol.
 
