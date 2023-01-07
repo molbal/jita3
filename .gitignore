@@ -241,7 +241,6 @@ dist
 
 # Optional stylelint cache
 
-# SvelteKit build / generate output
-.svelte-kit
-
 # End of https://www.toptal.com/developers/gitignore/api/node,git,jetbrains+all
+
+.DS_STORE

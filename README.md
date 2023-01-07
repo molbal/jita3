@@ -11,11 +11,11 @@ This is a simple trading bot that uses the [Binance API](https://binance-docs.gi
 
 To run the bot in a Docker container, you will need to have Docker installed. Then, build the Docker image by running the following command in the project root directory:
 
-  docker build -t jita3 .
+  `docker build -t jita3 .`
 
 To run the image in a container, use the following command:
 
-  docker run -d --name jita3 -e API\_KEY=your-api-key -e API\_SECRET=your-api-secret -e SYMBOL=ETH -e AMOUNT=0.01 jita3
+  `docker run -d --name jita3 -e API\_KEY=your-api-key -e API\_SECRET=your-api-secret -e SYMBOL=ETH -e AMOUNT=0.01 jita3`
 
 This will run the `jita3` image in a container in detached mode (\`-d\`). The \`--name\` flag specifies the name of the container as \`jita3\`. The \`-e\` flag is used to set the following container environment variables:
 
